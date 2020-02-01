@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Ascendix</title>
+	<link href="https://fonts.googleapis.com/css?family=Mitr:400,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>	
+	<div id="container" class="container"> 
+		<div id="header-block" class="header-block">
+			<div class="number-header header">
+				<text>id</text>
+				<div onclick="tableSort(this)" class="icon-visibility"><img src="down-arrow.png" alt="sort_icon"></div>
+			</div>
+			<div class="username-header header">
+				<text>Name</text>
+				<div onclick="tableSort(this)" class="icon-visibility sort"><img src="down-arrow.png" alt="sort_icon"></div>
+			</div>
+			<div class="name-header header">
+				<text>Username</text>
+				<div onclick="tableSort(this)" class="icon-visibility sort"><img src="down-arrow.png" alt="sort_icon"></div>
+			</div>
+			<div class="email-header header">
+				<text>Email</text>	
+				<div onclick="tableSort(this)" class="icon-visibility sort"><img src="down-arrow.png" alt="sort_icon"></div>
+			</div>
+			<div class="Website-header header">
+				<text>Website</text>
+				<div onclick="tableSort(this)" class="icon-visibility sort"><img src="down-arrow.png" alt="sort_icon"></div>
+			</div>
+		</div>
+		<!-- <div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div>
+		<div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div> -->
+		<!-- <div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div>
+		<div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div>
+		<div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div>
+		<div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div>
+		<div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div>
+		<div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div>
+		<div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div>
+		<div class="row" onclick="openModal()">
+			<div class="number section"></div>
+			<div class="name section">Name</div>
+			<div class="username section">Name</div>
+			<div class="email section">Name</div>
+			<div class="Website section">Name</div>
+		</div> -->
+
+
+
+
+
+
+		<!--<div class="column">
+			<a href="#openModal" class="column-header">#</a>
+			<div class="number section"></div>
+			<div class="number section"></div>
+			<div class="number section"></div>
+			<div class="number section"></div>
+			<div class="number section"></div>
+			<div class="number section"></div>
+			<div class="number section"></div>
+			<div class="number section"></div>
+			<div class="number section"></div>
+			<div class="number section"></div>
+		</div>
+		<div class="column">
+			<div class="column-header">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+			<div class="name section">Name</div>
+		</div>
+		<div class="column">
+			<div class="column-header">Username</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+			<div class="username section">Name</div>
+		</div>
+		<div class="column">
+			<div class="column-header">Email</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+			<div class="email section">Name</div>
+		</div>
+		<div class="column">
+			<div class="column-header">Website</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+			<div class="Website section">Name</div>
+		</div>	 -->	
+		
+
+	</div>
+	<div id="openModal" class="modalDialog">
+			<div>
+				<div title="Закрыть" id="close" class="close" onclick="closeModal()">X</div>
+				<p class="modal-header">#		
+					<span id="username-number">4</span>
+					<span id="username-modal"></span>
+				</p>
+				<p>Street: <span id="street">Kulas Light</span></p>
+				<p>Suite: <span id="suite">Apt. 556</span></p>
+				<p>City: <span id="city">Gwenborough</span></p>
+				<p>Zip-code: <span id="zipcode">92998-3874</span></p>
+				<p>Geo: lat:
+					<span id="geo-lat">-37.3159</span>
+					lng:
+					<span id="geo-lng">-37.3159</span>
+				</p>
+				<p>Phone: <span  id="phone">1-770-736-8031 x56442</span></p>
+				<p>
+					Company name:
+					<p id="company-name">Romaguera-Crona</p>
+					Company Catch Phrase:
+					<p id="company-phrase">Multi-layered client-server neural-net </p>
+					Company bs:
+					<p id="company-bs">harness real-time e-markets</p>
+				</p>
+			</div>
+		</div>
+
+		<img id="loading" src="loading.gif" alt="loading">
+
+<script src="script.js"></script>
+</body>
+</html>
